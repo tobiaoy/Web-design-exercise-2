@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>First Number</title>
+	<link rel = "stylesheet" type = "text/css" href = "a2.css" />
+</head>
+
+<body>
+	<h1>Addition: First Number</h1>
+
+	<?php if (!empty($error_message)) { ?>
+		<p class="error"><?php echo $error_message; ?></p>
+	<?php } ?>
+	
+	<div class = "fdata">
+		<h3>Input your first float</h3>
+		<form id = "first_number" action = "GetNumber2.php" method = "get">
+
+			<div id = "fnum">
+				<label>Enter a number (format : 999999.999) :</label>
+				<input type = "text" name = "first_number"/><br />
+
+				<input type = "submit"
+					value = "SubmitNumber" />
+			</div>
+		</form>
+	</div>
+</body>
+</html>
